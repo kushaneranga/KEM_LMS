@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('course_id')->constrained('courses');
             $table->foreignId('module_id')->constrained('module_categories');
             $table->string('title', 100);
-            $table->string('slug')->nullable();
+            $table->string('slug');
             $table->text('description')->nullable();
             $table->string('module_image')->nullable();
             $table->integer('created_by')->unsigned()->nullable();
